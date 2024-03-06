@@ -1,2 +1,0 @@
-# Programacion2_javafx
-programacion2_2024_1_fx
