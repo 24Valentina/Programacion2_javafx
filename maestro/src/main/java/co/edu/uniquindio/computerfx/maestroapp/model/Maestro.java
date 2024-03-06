@@ -73,7 +73,8 @@ public class Maestro {
         return "Maestro{" +
                 "nombre='" + nombre + '\'' +
                 ", cedula='" + cedula + '\'' +
-                "Materia asignada" + materiaAsignada;
+                ", MateriaAsignada=" + materiaAsignada + '\'' +
+                '}';
     }
     public String imprimirMaestro() {
         return "Maestro{" +

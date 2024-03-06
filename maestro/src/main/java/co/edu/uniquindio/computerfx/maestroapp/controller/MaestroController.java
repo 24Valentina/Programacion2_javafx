@@ -84,6 +84,7 @@ public class MaestroController {
         maestro.setCedula(txtCedula.getText());
         maestro.setEdad(Integer.parseInt(txtEdad.getText()));
         maestro.setEmail(txtEmail.getText());
+        maestro.setCelular((txtCelular.getText()));
         maestro.setmateriaAsignada(txtMateriaAsignada.getText());
 
         if (rButtonPrimaria.isSelected()){
