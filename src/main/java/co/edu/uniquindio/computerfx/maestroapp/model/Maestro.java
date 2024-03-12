@@ -1,5 +1,7 @@
 package co.edu.uniquindio.computerfx.maestroapp.model;
 
+import co.edu.uniquindio.computerfx.maestroapp.model.builder.MaestroBuilder;
+
 public class Maestro {
     private String nombre;
     private String cedula;
@@ -9,6 +11,20 @@ public class Maestro {
     private String materiaAsignada;
 
     public Maestro() {
+    }
+
+    public Maestro(String nombre, String cedula, int edad, String email,
+                   String celular, String materiaAsignada) {
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.edad = edad;
+        this.email = email;
+        this.celular = celular;
+        this.materiaAsignada = materiaAsignada;
+    }
+
+    public static MaestroBuilder builder(){
+        return new MaestroBuilder();
     }
 
     public String getNombre() {
@@ -51,11 +67,11 @@ public class Maestro {
         this.celular = celular;
     }
 
-    public String getmateriaAsignada() {
+    public String getMateriaAsignada() {
         return materiaAsignada;
     }
 
-    public void setmateriaAsignada(String materiaAsignada) {
+    public void setMateriaAsignada(String materiaAsignada) {
         this.materiaAsignada = materiaAsignada;
     }
 
